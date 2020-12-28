@@ -1,0 +1,9 @@
+import random
+# Split string method
+names_string = input("Give me everybody's names, separated by a comma. ")
+names = names_string.split(", ")
+
+number_of_peoples =len(names)
+lucky_person = int(random.randint(1,number_of_peoples)) - 1
+
+print(f"{names[lucky_person]} is going to buy the meal today!")
