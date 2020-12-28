@@ -6,8 +6,12 @@ print(f"{row1}\n{row2}\n{row3}")
 position = input("Where do you want to put the treasure? ")
 
 list = position
+
+#It Takes me 30 min to be able to identify what type of mistake I'm doing!, Lol I didn't converted the list into Integer, I have fixed it on line 11 & 12, Peace out...
 x =int(list[0]) 
 y = int(list[1])-1
+
+
 print(x, y)
 if (x == 1):
   row1[y] = 'X'
