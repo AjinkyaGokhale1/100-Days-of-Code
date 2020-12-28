@@ -1,0 +1,41 @@
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+import random
+u = int(input("Choose appropriate Number,\n Rock = 1,\n Paper = 2,\n Scissors = 3\n"))-1
+game = [rock, paper, scissors]
+print(f"Your Choice is {game[u]}")
+
+c = random.randint(0,2)
+print(f"Computer Choice is {game[c]}")
+
+if (u==0 and c==1) or (u==1 and c==2) or (u ==2 and c == 0):
+  print("You Lose!")
+
+elif (u == 1 and c == 0) or (u == 2 and c ==1 ) or (u ==0 and c ==2):
+  print("You Win!")
+else:
+  print("Match Tie")
