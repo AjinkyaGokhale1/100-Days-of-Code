@@ -1,0 +1,25 @@
+row1 = ["⬜️","⬜️","⬜️"]
+row2 = ["⬜️","⬜️","⬜️"]
+row3 = ["⬜️","⬜️","⬜️"]
+map = [row1, row2, row3]
+print(f"{row1}\n{row2}\n{row3}")
+position = input("Where do you want to put the treasure? ")
+
+list = position
+x =int(list[0]) 
+y = int(list[1])-1
+print(x, y)
+if (x == 1):
+  row1[y] = 'X'
+  
+elif(x ==2):
+  row2[y] = 'X'
+
+elif(x ==3):
+  row3[y] = 'X'
+
+else:
+  print("Error, Please Enter Number between 11 to 33")
+ 
+
+print(f"{row1}\n{row2}\n{row3}")
