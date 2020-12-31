@@ -16,4 +16,7 @@ while not at_goal():
     
     if wall_in_front() and wall_on_right():
         turn_left()
-#https://att-b.udemycdn.com/2020-11-19_15-45-25-f681a0a7ff20ce85952249fa836871bb/original.zip?secure=jna5mRYKyyK32MWjz4ZDUw%3D%3D%2C1609412813&filename=Reeborg+World+Tests.zip
+
+
+#Infinate Loop Custom Maze download here 
+#https://drive.google.com/file/d/1rkhphECst-KjahCot_ydWOfgevOV02uq/view?usp=sharing
