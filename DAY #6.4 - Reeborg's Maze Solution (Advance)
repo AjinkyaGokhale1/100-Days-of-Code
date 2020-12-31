@@ -1,0 +1,19 @@
+#This solution tackles any infinate Loops 
+
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+while not at_goal():
+    if front_is_clear() and wall_on_right():
+        move()
+    elif front_is_clear() and right_is_clear():
+        move()
+
+    elif right_is_clear():
+        turn_right()
+        move()
+    
+    if wall_in_front() and wall_on_right():
+        turn_left()
+#https://att-b.udemycdn.com/2020-11-19_15-45-25-f681a0a7ff20ce85952249fa836871bb/original.zip?secure=jna5mRYKyyK32MWjz4ZDUw%3D%3D%2C1609412813&filename=Reeborg+World+Tests.zip
